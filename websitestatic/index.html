@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon"   href="img/cupcakelogo.png" type="image/png"/>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <title>Delicias Lunaticas</title>
 </head>
@@ -68,7 +68,7 @@
                                     <line x1="4" y1="16" x2="20" y2="16"></line>
                                 </svg>
                             </div>
-                            <div class="hidden close-m-menu text-gray-700" onclick="MenuHandler(this,false)">
+                            <div class="hidden close-m-menu text-gray-700">
                                 <svg aria-label="Close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" />
                                     <line x1="18" y1="6" x2="6" y2="18" />
@@ -84,26 +84,26 @@
                         </div>
                     </button>
                     <div class="flex">
-                        <div class="hidden xl:flex md:mr-6 xl:mr-16">
-                            <a href="javascript: void(0)" class="focus:text-indigo-700 border-b-2 border-transparent focus:border-indigo-700 flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
+                        <div class="hidden sm:flex md:mr-6 sm:mr-16">
+                            <a href="#" class="focus:text-indigo-700 border-b-2 border-transparent focus:border-indigo-700 flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
                                 <span class="mr-2">
                                    <img src="img/icons8-home-page-32.png" alt="icono inicio">
                                 </span>
                                 Inicio
                             </a>
-                            <a href="javascript: void(0)" class="focus:text-indigo-700 border-b-2 border-transparent focus:border-indigo-700 flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
+                            <a href="#" class="focus:text-indigo-700 border-b-2 border-transparent focus:border-indigo-700 flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
                                 <span class="mr-2">
                                    <img src="img/iconsobremi.png" alt="icono sobre mi">
                                 </span>
                                 Sobre Mi
                             </a>
-                            <a href="javascript: void(0)" class="focus:text-indigo-700 border-b-2 border-transparent focus:border-indigo-700 flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
+                            <a href="#" class="focus:text-indigo-700 border-b-2 border-transparent focus:border-indigo-700 flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
                                 <span class="mr-2">
                                    <img src="img/pan.png" width="32" heigth="32"alt="icono productos">
                                 </span>
                                 Productos
                             </a>
-                         <a href="javascript: void(0)" class="focus:text-indigo-700 border-b-2 border-transparent focus:border-indigo-700 flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
+                         <a href="#" class="focus:text-indigo-700 border-b-2 border-transparent focus:border-indigo-700 flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
                                 <span class="mr-2"> 
                                   <img src="img/icons8-whatsapp.gif" heigth="32" width="32"alt="icono contacto">
                                     </span>
@@ -115,125 +115,29 @@
             </div>
         </nav>
         <nav>
-            <div class="  py-4 px-6 w-full flex xl:hidden justify-between items-center bg-white fixed top-0 z-40">
-                <div aria-label="logo" role="img" tabindex="0" class="focus:outline-none w-24">
-                    <img class="rounded h-10 w-10 object-cover" src="img/cupcakelogo.png" alt="logo" />
-                </div>
+            <div class="  py-4 px-1\.5 w-full flex xl:hidden justify-between items-center bg-gradient-to-r from-pink-300 to-red-200 fixed top-0 z-40">
                 <div class="flex items-center">
-                    <div class="ml-10 sm:pt-10 sm:text-l text-lg font-semibold font-sans">
+                    <div class="ml-24 pb-5 absolute text-lg font-semibold font-sans">
                         Delicias Lunaticas
                     </div>
-                    <span class="justify-center px-1 text-xs">Menu</span>
-                    <button id="menu" aria-label="open menu" class="focus:outline-none focus:ring-2 focus:ring-gray-600 rounded-md text-gray-800" onclick="sidebarHandler(true)">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <line x1="4" y1="6" x2="20" y2="6" />
-                            <line x1="4" y1="12" x2="20" y2="12" />
-                            <line x1="4" y1="18" x2="20" y2="18" />
-                        </svg>
-                    </button>
                 </div>
+                <div aria-label="logo" role="img" tabindex="0" class="focus:outline-none w-24">
+                    <img class="rounded h-10 w-10 object-cover" src="img/cupcakelogo.png" alt="logo"/>
+                </div>
+                <div class="flex justify-center sm:flex space-x-2 w-screen h-16 mb-1 text-md font-semibold text-white align-center pr-10 pt-7 bg-gradient-to-r from-pink-300 to-red-200">
+                    <img id="img-home" src="img/icon-home-small.png"  alt="">
+                    <a href="#" class="p-3\.5 m-1 pt-5 underline cursor-pointer">Inicio</a>
+                    <img id="img-home" src="img/icons8-cupcake-24S.png"  alt="">
+                   <a href="#" class="p-3\.5 m-1  pt-5 underline cursor-pointer">Productos</a>
+                   <img id="img-home" src="img/icons8-duplicate-contacts-24S.png"  alt="">
+                    <a href="#" class="p-3\.5 m-1  pt-5 underline cursor-pointer">Contacto</a>
+                </div>
+               
+
+               <!-- 
+               -->
             </div>
             <!--Mobile responsive sidebar-->
-            <div class="absolute w-full h-full transform -translate-x-full z-40 xl:hidden" id="mobile-nav">
-                <div class="bg-gray-800 opacity-50 w-full h-full" onclick="sidebarHandler(false)"></div>
-                <div class="w-64 z-40 fixed overflow-y-auto z-40 top-0 bg-white shadow h-full flex-col justify-between xl:hidden pb-4 transition duration-150 ease-in-out">
-                    <div class="px-6 h-full">
-                        <div class="flex flex-col justify-between h-full w-full">
-                            <div>
-                                <div class="mt-6 flex w-full items-center justify-between">
-                                    <div class="flex items-center justify-between w-full">
-                                        <div class="flex items-center">
-                                            <img class="rounded h-10 w-10 object-cover" src="img/cupcakelogo.png" alt="logo" />
-                                            <p tabindex="0" id="text-principal" class="focus:outline-none text-base md:text-2xl text-gray-800 ml-3">Delicias Lunaticas</p>
-                                        </div>
-                                        <button id="cross" aria-label="close menu" class="focus:outline-none focus:ring-2 rounded-md text-gray-800" onclick="sidebarHandler(false)">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z"></path>
-                                                <line x1="18" y1="6" x2="6" y2="18"></line>
-                                                <line x1="6" y1="6" x2="18" y2="18"></line>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                                <ul class="f-m-m">
-                                    <li>
-                                        <a class="cursor-pointer">
-                                            <div class="text-gray-800 pt-10">
-                                                <div class="flex items-center">
-                                                    <div class="w-6 h-6 md:w-8 md:h-8 text-indigo-700">
-                                                        <img src="img/icons8-home-page-32.png" alt="icono Inicio">
-                                                    </div>
-                                                    <p tabindex="0" class="focus:outline-none focus:text-indigo-600 text-indigo-700 xl:text-base text-base ml-3">Inicio</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="cursor-pointer">
-                                            <div class="text-gray-800 pt-8">
-                                                <div class="flex items-center justify-between">
-                                                    <div class="flex items-center">
-                                                        <div class="w-6 h-6 md:w-8 md:h-8 text-gray-800">
-                                                          <img src="img/iconsobremi.png" alt="icono sobre mi">
-                                                        </div>
-                                                        <p tabindex="0" class="focus:outline-none focus:text-indigo-600 text-gray-800 xl:text-base md:text-2xl text-base ml-3">Sobre Mi</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="cursor-pointer">
-                                            <div class="text-gray-800 pt-8">
-                                                <div class="flex items-center">
-                                                    <div class="w-6 h-6 md:w-8 md:h-8 text-gray-800">
-                                                       <img src="img/pan.png" alt="icono productos">
-                                                    </div>
-                                                    <p tabindex="0" class="focus:outline-none focus:text-indigo-600 text-gray-800 xl:text-base md:text-2xl text-base ml-3">Productos</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="text-gray-800 pt-8 cursor-pointer">
-                                        <div class="flex items-center justify-between">
-                                            <div class="flex items-center">
-                                               <img src="img/icons8-whatsapp.gif" heigth="32" width="32" alt="icono contacto">
-                                              <a href="https://api.whatsapp.com/send?phone=542255520756"><p tabindex="0" target="_blank" class="focus:outline-none focus:text-indigo-600 text-gray-800 xl:text-base md:text-2xl text-base ml-3">Contacto</p></a>  
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="w-full pt-4">
-                                <div class="flex justify-center mb-4 w-full">
-                                </div>
-                                <div class="border-t border-gray-300">
-                                    <div class="w-full flex items-center justify-between pt-1">
-                                        <div class="flex items-center">
-                                            <img alt="profile-pic" src="img/cheflogo.png" tabindex="0" class=" w-8 h-8 rounded-md"/>
-                                            <p tabindex="0" class="focus:outline-none text-gray-800 text-base leading-4 ml-2">Dana</p>
-                                        </div>
-                                        <ul class="flex">
-                                            <li class="cursor-pointer text-gray-800 pt-5 pb-3">
-                                                <div tabindex="0" class="focus:outline-none focus:text-indigo-600 w-6 h-6 md:w-8 md:h-8">
-                                                    <img src="img/icons8-vegan.png" alt="icon vegan">
-                                                </div>
-                                            </li>
-                                            <li class="cursor-pointer text-gray-800 pt-5 pb-3 pl-3">
-                                                <div tabindex="0" class="focus:outline-none focus:text-indigo-600 w-6 h-6 md:w-8 md:h-8">
-                                                    <img src="img/cupcakelogo.png" alt="icono logo">
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
         <!-- Code block ends -->
     </div>
      <!-- inicio del main-->
