@@ -2,3 +2,9 @@
     background-image: url('img/fondo-circulo.png');
    
 }
+#img-home {
+    height: 24px;
+    width: 24px;
+    margin-top: 24px;
+    
+}
